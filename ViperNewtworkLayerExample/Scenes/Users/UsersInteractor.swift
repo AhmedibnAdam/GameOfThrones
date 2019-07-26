@@ -29,7 +29,7 @@ class UsersInteractor: UsersInteractorInputProtocol {
     
     
     func getCharacters()  {
-        MarvelRouter.characters(lang: "en").sendNative(Got.self) { (response) in
+        MarvelRouter.characters(lang: "en").send(Got.self) { (response) in
             switch response {
                 
             case .failure(let error):

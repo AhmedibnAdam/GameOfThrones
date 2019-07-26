@@ -27,6 +27,8 @@ protocol URLRequestBuilder: URLRequestConvertible, APIRequestHandler {
     // MARK: - Methods
     var method: HTTPMethod { get }
     
+    var headers: HTTPHeaders { get }
+    
     var encoding: ParameterEncoding { get }
     
     var deviceId: String { get }
@@ -52,17 +54,21 @@ extension URLRequestBuilder {
     
     
     var mainURL: URL  {
-        return URL(string: "https://anapioficeandfire.com/api/"  )!
+        return URL(string: "https://anapioficeandfire.com/api/" )!
     }
     
     var requestURL: URL {
          return mainURL.appendingPathComponent(path)
        
     }
+    
+    var APIToken: String? {
+        return ""
+    }
     var defaultParams: Parameters {
         var param = Parameters()
         param["language"] =  "en"
-     //   param["mobile_id"] = deviceId
+        param["api_token"] = deviceId
 
         return param
     }
@@ -71,12 +77,16 @@ extension URLRequestBuilder {
         return UIDevice.current.identifierForVendor?.uuidString ?? ""
     }
     
+    var headers: HTTPHeaders {
+        return HTTPHeaders()
+    }
+    
     var urlRequest: URLRequest {
         var request = URLRequest(url: requestURL)
         request.httpMethod = method.rawValue
+        headers.forEach { request.addValue($1, forHTTPHeaderField: $0) }
         return request
     }
-    
     
     
     // MARK: - URLRequestConvertible

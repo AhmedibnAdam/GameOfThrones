@@ -151,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				6631FC9022E935DE008F0297 /* BuilderProtocol */,
-				6631FCAD22EAAF88008F0297 /* UploadData.swift */,
 				6631FC7F22E934C0008F0297 /* UserRouter.swift */,
 				6631FC8E22E93532008F0297 /* MarvelRouter.swift */,
 			);
@@ -161,6 +160,7 @@
 		6631FC9022E935DE008F0297 /* BuilderProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				6631FCAD22EAAF88008F0297 /* UploadData.swift */,
 				6631FC8022E934C0008F0297 /* URLRequestBuilder.swift */,
 			);
 			path = BuilderProtocol;

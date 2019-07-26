@@ -59,11 +59,11 @@ struct GotViewModel {
     
   
     
-    init(got: Got) {
-        name = got[0].name ?? "Adam"
-        coatOfArms = got[0].coatOfArms ?? "what is die never dies"
-        region = got[0].region ?? "32423"
-        founded = got[0].founded ?? "324"
+    init(got: GOTElement) {
+        name = got.name ?? "Adam"
+        coatOfArms = got.coatOfArms ?? "what is die never dies"
+        region = got.region ?? "32423"
+        founded = got.founded ?? "324"
      
     }
     

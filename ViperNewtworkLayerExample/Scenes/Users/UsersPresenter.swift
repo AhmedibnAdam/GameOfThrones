@@ -54,7 +54,7 @@ class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
     }
     
     func configure(cell: UsersCellView, indexPath: IndexPath) {
-        let got = self.got
+        let got = self.got[indexPath.row]
         let viewModel = GotViewModel(got: got)
         cell.configure(viewModel: viewModel)
     }

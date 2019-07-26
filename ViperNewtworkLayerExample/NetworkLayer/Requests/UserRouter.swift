@@ -14,6 +14,10 @@ import Alamofire
 
 // all actions made by user
 enum UserRouter: URLRequestBuilder {
+    
+    
+    
+    
 
     case login(email: String, password: String)
     case register(email: String, password: String, phone: String)
@@ -122,7 +126,9 @@ enum UserRouter: URLRequestBuilder {
         }
     }
     
-    
+    var headers: HTTPHeaders {
+        return self.headers
+    } //= ["Api_key"] = "kkkkkkkkkkk"
     
    
 }

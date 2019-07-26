@@ -17,10 +17,16 @@ import Alamofire
 enum MarvelRouter: URLRequestBuilder {
     
     
-    
-    
-    
+
     case characters(lang: String)
+    
+    // Headers
+    
+    var headers: HTTPHeaders {
+        
+        return ["api_key":"" , "":""]
+    }
+
     
     
     // MARK: - Path
@@ -54,5 +60,8 @@ enum MarvelRouter: URLRequestBuilder {
             
         }
     }
+
+    
+ 
     
 }
