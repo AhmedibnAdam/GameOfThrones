@@ -35,6 +35,7 @@ class UsersInteractor: UsersInteractorInputProtocol {
             case .failure(let error):
                 // TODO: - Handle error as you want, printing isn't handling.
                 print(error!)
+                
                 self.presenter?.usersFetchingFailed(withError: error!)
             case .success(let value):
                 print(value[0].name!)
