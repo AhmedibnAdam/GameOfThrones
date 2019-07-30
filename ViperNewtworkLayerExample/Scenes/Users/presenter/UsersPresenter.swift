@@ -14,9 +14,12 @@ protocol UsersPresenterProtocol: class {
     var numberOfRows: Int { get }
     func viewDidLoad()
     func configure(cell: UsersCellView, indexPath: IndexPath)
+    func didselectRow()
 }
 
 class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
+  
+    
     
     weak var view: UsersViewProtocol?
     private let interactor: UsersInteractorInputProtocol
@@ -48,14 +51,21 @@ class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
     
     }
     
-    func usersFetchingFailed(withError error: Error) {
+    func usersFetchingFailed() {
         view?.hideLoadingIndicator()
         //Failure - Should show alert
+        self.showAlert()
     }
     
     func configure(cell: UsersCellView, indexPath: IndexPath) {
         let got = self.got[indexPath.row]
         let viewModel = GotViewModel(got: got)
         cell.configure(viewModel: viewModel)
+    }
+    func didselectRow() {
+        router.presentAlert()
+    }
+    func showAlert() {
+        router.presentAlert()
     }
 }

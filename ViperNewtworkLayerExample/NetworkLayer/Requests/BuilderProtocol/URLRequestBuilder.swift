@@ -84,7 +84,7 @@ extension URLRequestBuilder {
     var urlRequest: URLRequest {
         var request = URLRequest(url: requestURL)
         request.httpMethod = method.rawValue
-        headers.forEach { request.addValue($1, forHTTPHeaderField: $0) }
+  //      headers.forEach { request.addValue($1, forHTTPHeaderField: $0) }
         return request
     }
     

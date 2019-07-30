@@ -24,7 +24,7 @@ enum MarvelRouter: URLRequestBuilder {
     
     var headers: HTTPHeaders {
         
-        return ["api_key":"" , "":""]
+        return ["":""] // ["api_key":"" , "":""]
     }
 
     

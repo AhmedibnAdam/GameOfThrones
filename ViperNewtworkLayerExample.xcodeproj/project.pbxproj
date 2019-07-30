@@ -27,10 +27,10 @@
 		6631FCA222E9544D008F0297 /* UsersModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9922E9544D008F0297 /* UsersModuleBuilder.swift */; };
 		6631FCA322E9544D008F0297 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9B22E9544D008F0297 /* UserCell.swift */; };
 		6631FCA422E9544D008F0297 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9C22E9544D008F0297 /* UsersRouter.swift */; };
-		6631FCA522E9544D008F0297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6631FC9D22E9544D008F0297 /* Main.storyboard */; };
 		6631FCA622E9544D008F0297 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9F22E9544D008F0297 /* UsersPresenter.swift */; };
 		6631FCAB22E957D4008F0297 /* UsersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FCAA22E957D4008F0297 /* UsersWorker.swift */; };
 		6631FCAE22EAAF88008F0297 /* UploadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FCAD22EAAF88008F0297 /* UploadData.swift */; };
+		66C9C4CA22F0030D005A47D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C9C4C822F0030D005A47D8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,15 +51,15 @@
 		6631FC8022E934C0008F0297 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		6631FC8E22E93532008F0297 /* MarvelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRouter.swift; sourceTree = "<group>"; };
 		6631FC9122E93832008F0297 /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
-		6631FC9722E9544D008F0297 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		6631FC9722E9544D008F0297 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersViewController.swift; path = ../UsersViewController.swift; sourceTree = "<group>"; };
 		6631FC9822E9544D008F0297 /* UsersInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersInteractor.swift; sourceTree = "<group>"; };
 		6631FC9922E9544D008F0297 /* UsersModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersModuleBuilder.swift; sourceTree = "<group>"; };
 		6631FC9B22E9544D008F0297 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		6631FC9C22E9544D008F0297 /* UsersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
-		6631FC9E22E9544D008F0297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6631FC9F22E9544D008F0297 /* UsersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
 		6631FCAA22E957D4008F0297 /* UsersWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersWorker.swift; sourceTree = "<group>"; };
 		6631FCAD22EAAF88008F0297 /* UploadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadData.swift; sourceTree = "<group>"; };
+		66C9C4C922F0030D005A47D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2601B6514938EF5BEC37D /* Pods-ViperNewtworkLayerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +83,16 @@
 				7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6630B0B422F0006D000BA963 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6631FC9A22E9544D008F0297 /* TableViewCells */,
+				6631FC9722E9544D008F0297 /* UsersViewController.swift */,
+				66C9C4C822F0030D005A47D8 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		6631FC5622E93499008F0297 = {
@@ -194,13 +204,11 @@
 		6631FC9622E9544D008F0297 /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				6631FC9722E9544D008F0297 /* UsersViewController.swift */,
-				6631FC9822E9544D008F0297 /* UsersInteractor.swift */,
 				6631FC9922E9544D008F0297 /* UsersModuleBuilder.swift */,
-				6631FC9A22E9544D008F0297 /* TableViewCells */,
-				6631FC9C22E9544D008F0297 /* UsersRouter.swift */,
-				6631FC9D22E9544D008F0297 /* Main.storyboard */,
-				6631FC9F22E9544D008F0297 /* UsersPresenter.swift */,
+				6630B0B422F0006D000BA963 /* view */,
+				66C9C4C522F000C5005A47D8 /* interactor */,
+				66C9C4C722F000E5005A47D8 /* presenter */,
+				66C9C4C622F000D9005A47D8 /* router */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -210,7 +218,8 @@
 			children = (
 				6631FC9B22E9544D008F0297 /* UserCell.swift */,
 			);
-			path = TableViewCells;
+			name = TableViewCells;
+			path = ../TableViewCells;
 			sourceTree = "<group>";
 		};
 		6631FCA722E95466008F0297 /* Resources */ = {
@@ -228,6 +237,30 @@
 				6631FCAA22E957D4008F0297 /* UsersWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		66C9C4C522F000C5005A47D8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6631FC9822E9544D008F0297 /* UsersInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		66C9C4C622F000D9005A47D8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				6631FC9C22E9544D008F0297 /* UsersRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		66C9C4C722F000E5005A47D8 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6631FC9F22E9544D008F0297 /* UsersPresenter.swift */,
+			);
+			path = presenter;
 			sourceTree = "<group>";
 		};
 		9EA848C28A951D83AD7DCE9C /* Frameworks */ = {
@@ -300,7 +333,7 @@
 			files = (
 				6631FC6D22E9349B008F0297 /* LaunchScreen.storyboard in Resources */,
 				6631FC6A22E9349B008F0297 /* Assets.xcassets in Resources */,
-				6631FCA522E9544D008F0297 /* Main.storyboard in Resources */,
+				66C9C4CA22F0030D005A47D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,10 +427,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		6631FC9D22E9544D008F0297 /* Main.storyboard */ = {
+		66C9C4C822F0030D005A47D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6631FC9E22E9544D008F0297 /* Base */,
+				66C9C4C922F0030D005A47D8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

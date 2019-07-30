@@ -16,7 +16,7 @@ protocol UsersInteractorInputProtocol {
 
 protocol UsersInteractorOutputProtocol: class {
     func usersFetchedSuccessfully(users: Got)
-    func usersFetchingFailed(withError error: Error)
+    func usersFetchingFailed()
 }
 
 
@@ -34,9 +34,9 @@ class UsersInteractor: UsersInteractorInputProtocol {
                 
             case .failure(let error):
                 // TODO: - Handle error as you want, printing isn't handling.
-                print(error!)
+                print(error ?? "error")
                 
-                self.presenter?.usersFetchingFailed(withError: error!)
+                self.presenter?.usersFetchingFailed()
             case .success(let value):
                 print(value[0].name!)
                  self.presenter?.usersFetchedSuccessfully(users: value)

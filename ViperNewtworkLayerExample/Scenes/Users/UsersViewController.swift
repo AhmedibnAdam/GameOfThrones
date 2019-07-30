@@ -26,8 +26,8 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
         presenter.viewDidLoad()
+         setupTableView()
     }
     
     private func setupTableView() {
@@ -47,6 +47,10 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didselectRow()
     }
   
     func showLoadingIndicator() {
