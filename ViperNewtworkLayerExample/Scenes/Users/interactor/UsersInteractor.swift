@@ -25,7 +25,7 @@ class UsersInteractor: UsersInteractorInputProtocol {
     
     weak var presenter: UsersInteractorOutputProtocol?
     
-    private let usersWorker = UsersWorker()
+ //   private let usersWorker = UsersWorker()
     
     
     func getCharacters()  {

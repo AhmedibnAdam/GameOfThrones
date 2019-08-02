@@ -10,10 +10,13 @@ import UIKit
 
 protocol UsersRouterProtocol {
     func presentAlert()
+    func presentDetails()
 }
 
 
 class UsersRouter: UsersRouterProtocol {
+    
+    
     
     weak var viewController: UIViewController?
     
@@ -36,9 +39,9 @@ class UsersRouter: UsersRouterProtocol {
         viewController?.present(alert, animated: true, completion: nil)
     }
     
-//    func presentDetails(forArticle article: Article) {
-//        let detailsModuleViewController = DetailsRouter.assembleModule(article)
-//        viewController?.navigationController?.pushViewController(detailsModuleViewController, animated: true)
-//    }
+    func presentDetails() {
+        let detailsModuleViewController = DetailsViewController.init(nibName: "Details", bundle: nil)
+        viewController?.navigationController?.pushViewController(detailsModuleViewController, animated: true)
+    }
     
 }

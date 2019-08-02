@@ -28,9 +28,13 @@
 		6631FCA322E9544D008F0297 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9B22E9544D008F0297 /* UserCell.swift */; };
 		6631FCA422E9544D008F0297 /* UsersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9C22E9544D008F0297 /* UsersRouter.swift */; };
 		6631FCA622E9544D008F0297 /* UsersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC9F22E9544D008F0297 /* UsersPresenter.swift */; };
-		6631FCAB22E957D4008F0297 /* UsersWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FCAA22E957D4008F0297 /* UsersWorker.swift */; };
 		6631FCAE22EAAF88008F0297 /* UploadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FCAD22EAAF88008F0297 /* UploadData.swift */; };
 		66C9C4CA22F0030D005A47D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C9C4C822F0030D005A47D8 /* Main.storyboard */; };
+		66C9C4CE22F40A43005A47D8 /* Details.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66C9C4CD22F40A42005A47D8 /* Details.xib */; };
+		66C9C4D122F40A95005A47D8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D022F40A95005A47D8 /* DetailsViewController.swift */; };
+		66C9C4D522F40BF5005A47D8 /* DetailsInteactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D422F40BF5005A47D8 /* DetailsInteactor.swift */; };
+		66C9C4D722F40C6D005A47D8 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D622F40C6D005A47D8 /* DetailsPresenter.swift */; };
+		66C9C4D922F40CFE005A47D8 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D822F40CFE005A47D8 /* DetailsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,9 +61,13 @@
 		6631FC9B22E9544D008F0297 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		6631FC9C22E9544D008F0297 /* UsersRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRouter.swift; sourceTree = "<group>"; };
 		6631FC9F22E9544D008F0297 /* UsersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersPresenter.swift; sourceTree = "<group>"; };
-		6631FCAA22E957D4008F0297 /* UsersWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersWorker.swift; sourceTree = "<group>"; };
 		6631FCAD22EAAF88008F0297 /* UploadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadData.swift; sourceTree = "<group>"; };
 		66C9C4C922F0030D005A47D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66C9C4CD22F40A42005A47D8 /* Details.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Details.xib; sourceTree = "<group>"; };
+		66C9C4D022F40A95005A47D8 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		66C9C4D422F40BF5005A47D8 /* DetailsInteactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteactor.swift; sourceTree = "<group>"; };
+		66C9C4D622F40C6D005A47D8 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		66C9C4D822F40CFE005A47D8 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
 		7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2601B6514938EF5BEC37D /* Pods-ViperNewtworkLayerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,8 +203,8 @@
 		6631FC9522E9544D008F0297 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6631FCA922E957D4008F0297 /* Workers */,
 				6631FC9622E9544D008F0297 /* Users */,
+				66C9C4CF22F40A61005A47D8 /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -231,14 +239,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		6631FCA922E957D4008F0297 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				6631FCAA22E957D4008F0297 /* UsersWorker.swift */,
-			);
-			path = Workers;
-			sourceTree = "<group>";
-		};
 		66C9C4C522F000C5005A47D8 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +261,50 @@
 				6631FC9F22E9544D008F0297 /* UsersPresenter.swift */,
 			);
 			path = presenter;
+			sourceTree = "<group>";
+		};
+		66C9C4CF22F40A61005A47D8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				66C9C4DA22F41252005A47D8 /* view */,
+				66C9C4DB22F41271005A47D8 /* interactor */,
+				66C9C4DC22F4127D005A47D8 /* Presenter */,
+				66C9C4DD22F41289005A47D8 /* router */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		66C9C4DA22F41252005A47D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				66C9C4CD22F40A42005A47D8 /* Details.xib */,
+				66C9C4D022F40A95005A47D8 /* DetailsViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		66C9C4DB22F41271005A47D8 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				66C9C4D422F40BF5005A47D8 /* DetailsInteactor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		66C9C4DC22F4127D005A47D8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				66C9C4D622F40C6D005A47D8 /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		66C9C4DD22F41289005A47D8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				66C9C4D822F40CFE005A47D8 /* DetailsRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 		9EA848C28A951D83AD7DCE9C /* Frameworks */ = {
@@ -333,6 +377,7 @@
 			files = (
 				6631FC6D22E9349B008F0297 /* LaunchScreen.storyboard in Resources */,
 				6631FC6A22E9349B008F0297 /* Assets.xcassets in Resources */,
+				66C9C4CE22F40A43005A47D8 /* Details.xib in Resources */,
 				66C9C4CA22F0030D005A47D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,16 +440,18 @@
 			files = (
 				6631FC8B22E934C0008F0297 /* URLRequestBuilder.swift in Sources */,
 				6631FCA122E9544D008F0297 /* UsersInteractor.swift in Sources */,
+				66C9C4D722F40C6D005A47D8 /* DetailsPresenter.swift in Sources */,
 				6631FCA222E9544D008F0297 /* UsersModuleBuilder.swift in Sources */,
 				6631FC8F22E93532008F0297 /* MarvelRouter.swift in Sources */,
 				6631FCA322E9544D008F0297 /* UserCell.swift in Sources */,
 				6631FCA022E9544D008F0297 /* UsersViewController.swift in Sources */,
-				6631FCAB22E957D4008F0297 /* UsersWorker.swift in Sources */,
 				6631FC6322E93499008F0297 /* AppDelegate.swift in Sources */,
 				6631FC8722E934C0008F0297 /* AlamofireResponse.swift in Sources */,
 				6631FC8422E934C0008F0297 /* CodableInit.swift in Sources */,
 				6631FC9222E93832008F0297 /* MarvelModel.swift in Sources */,
 				6631FC8922E934C0008F0297 /* DefaultResponse.swift in Sources */,
+				66C9C4D922F40CFE005A47D8 /* DetailsRouter.swift in Sources */,
+				66C9C4D522F40BF5005A47D8 /* DetailsInteactor.swift in Sources */,
 				6631FC8522E934C0008F0297 /* ResponseHandler.swift in Sources */,
 				6631FCA422E9544D008F0297 /* UsersRouter.swift in Sources */,
 				6631FCAE22EAAF88008F0297 /* UploadData.swift in Sources */,
@@ -413,6 +460,7 @@
 				6631FC8622E934C0008F0297 /* APIError.swift in Sources */,
 				6631FC8A22E934C0008F0297 /* UserRouter.swift in Sources */,
 				6631FCA622E9544D008F0297 /* UsersPresenter.swift in Sources */,
+				66C9C4D122F40A95005A47D8 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
