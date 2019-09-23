@@ -346,12 +346,12 @@
                   moduleName = "ViperNewtworkLayerExample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adam/iOS%20Cources/ViperNewtworkLayerExample/ViperNewtworkLayerExample/Scenes/Users/interactor/UsersInteractor.swift"
-                  timestampString = "586155771.674755"
+                  timestampString = "590935487.26044"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
                   endingLineNumber = "32"
-                  offsetFromSymbolStart = "25">
+                  offsetFromSymbolStart = "52">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -361,12 +361,12 @@
                   moduleName = "ViperNewtworkLayerExample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Adam/iOS%20Cources/ViperNewtworkLayerExample/ViperNewtworkLayerExample/Scenes/Users/interactor/UsersInteractor.swift"
-                  timestampString = "586155771.677712"
+                  timestampString = "590935487.262243"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
-                  offsetFromSymbolStart = "110">
+                  offsetFromSymbolStart = "104">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -394,7 +394,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperNewtworkLayerExample/NetworkLayer/Requests/BuilderProtocol/URLRequestBuilder.swift"
-            timestampString = "586420783.102734"
+            timestampString = "590935486.5316"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -410,7 +410,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperNewtworkLayerExample/NetworkLayer/Requests/BuilderProtocol/URLRequestBuilder.swift"
-            timestampString = "586420783.102784"
+            timestampString = "590935486.532321"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperNewtworkLayerExample/NetworkLayer/Requests/BuilderProtocol/URLRequestBuilder.swift"
-            timestampString = "586420783.1028301"
+            timestampString = "590935486.532616"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
@@ -442,7 +442,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperNewtworkLayerExample/NetworkLayer/Requests/BuilderProtocol/URLRequestBuilder.swift"
-            timestampString = "586420783.102872"
+            timestampString = "590935486.532879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
@@ -458,13 +458,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperNewtworkLayerExample/NetworkLayer/Requests/BuilderProtocol/URLRequestBuilder.swift"
-            timestampString = "586420783.102919"
+            timestampString = "590935486.533139"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "APIToken"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperNewtworkLayerExample/Scenes/Users/UsersViewController.swift"
+            timestampString = "590935571.0888031"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperNewtworkLayerExample/Scenes/Users/UsersViewController.swift"
+            timestampString = "590935571.895915"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperNewtworkLayerExample/Scenes/Users/interactor/UsersInteractor.swift"
+            timestampString = "590935691.032889"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getCharacters()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ViperNewtworkLayerExample/Scenes/Users/interactor/UsersInteractor.swift"
+            timestampString = "590935692.4784859"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "getCharacters()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

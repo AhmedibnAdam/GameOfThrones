@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		382262D3EC1A189114F66014 /* Pods_ViperNewtworkLayerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperNewtworkLayerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6631FC5F22E93499008F0297 /* ViperNewtworkLayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperNewtworkLayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6631FC5F22E93499008F0297 /* Got.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Got.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6631FC6222E93499008F0297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6631FC6922E9349B008F0297 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6631FC6C22E9349B008F0297 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		6631FC5622E93499008F0297 = {
 			isa = PBXGroup;
 			children = (
-				6631FC6122E93499008F0297 /* ViperNewtworkLayerExample */,
+				6631FC6122E93499008F0297 /* Got */,
 				6631FC6022E93499008F0297 /* Products */,
 				0C4C178FDA6BCFD62DE13A0D /* Pods */,
 				9EA848C28A951D83AD7DCE9C /* Frameworks */,
@@ -116,22 +116,22 @@
 		6631FC6022E93499008F0297 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6631FC5F22E93499008F0297 /* ViperNewtworkLayerExample.app */,
+				6631FC5F22E93499008F0297 /* Got.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6631FC6122E93499008F0297 /* ViperNewtworkLayerExample */ = {
+		6631FC6122E93499008F0297 /* Got */ = {
 			isa = PBXGroup;
 			children = (
 				6631FC6E22E9349B008F0297 /* Info.plist */,
 				6631FC9422E95421008F0297 /* Core */,
 				6631FC9322E95409008F0297 /* Entity */,
-				6631FC9522E9544D008F0297 /* Scenes */,
+				6631FC9522E9544D008F0297 /* App Scenes */,
 				6631FC7422E934C0008F0297 /* NetworkLayer */,
 				6631FCA722E95466008F0297 /* Resources */,
 			);
-			path = ViperNewtworkLayerExample;
+			path = Got;
 			sourceTree = "<group>";
 		};
 		6631FC7422E934C0008F0297 /* NetworkLayer */ = {
@@ -200,16 +200,16 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		6631FC9522E9544D008F0297 /* Scenes */ = {
+		6631FC9522E9544D008F0297 /* App Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				6631FC9622E9544D008F0297 /* Users */,
+				6631FC9622E9544D008F0297 /* GameOfThronesHouses */,
 				66C9C4CF22F40A61005A47D8 /* Details */,
 			);
-			path = Scenes;
+			path = "App Scenes";
 			sourceTree = "<group>";
 		};
-		6631FC9622E9544D008F0297 /* Users */ = {
+		6631FC9622E9544D008F0297 /* GameOfThronesHouses */ = {
 			isa = PBXGroup;
 			children = (
 				6631FC9922E9544D008F0297 /* UsersModuleBuilder.swift */,
@@ -218,7 +218,7 @@
 				66C9C4C722F000E5005A47D8 /* presenter */,
 				66C9C4C622F000D9005A47D8 /* router */,
 			);
-			path = Users;
+			path = GameOfThronesHouses;
 			sourceTree = "<group>";
 		};
 		6631FC9A22E9544D008F0297 /* TableViewCells */ = {
@@ -318,9 +318,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6631FC5E22E93499008F0297 /* ViperNewtworkLayerExample */ = {
+		6631FC5E22E93499008F0297 /* Got */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6631FC7122E9349B008F0297 /* Build configuration list for PBXNativeTarget "ViperNewtworkLayerExample" */;
+			buildConfigurationList = 6631FC7122E9349B008F0297 /* Build configuration list for PBXNativeTarget "Got" */;
 			buildPhases = (
 				22A5AB6E5530124057304BE9 /* [CP] Check Pods Manifest.lock */,
 				6631FC5B22E93499008F0297 /* Sources */,
@@ -332,9 +332,9 @@
 			);
 			dependencies = (
 			);
-			name = ViperNewtworkLayerExample;
+			name = Got;
 			productName = ViperNewtworkLayerExample;
-			productReference = 6631FC5F22E93499008F0297 /* ViperNewtworkLayerExample.app */;
+			productReference = 6631FC5F22E93499008F0297 /* Got.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6631FC5A22E93499008F0297 /* Build configuration list for PBXProject "ViperNewtworkLayerExample" */;
+			buildConfigurationList = 6631FC5A22E93499008F0297 /* Build configuration list for PBXProject "Got" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -365,7 +365,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6631FC5E22E93499008F0297 /* ViperNewtworkLayerExample */,
+				6631FC5E22E93499008F0297 /* Got */,
 			);
 		};
 /* End PBXProject section */
@@ -609,15 +609,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM5396X53H;
-				INFOPLIST_FILE = ViperNewtworkLayerExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Got/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Adam.ViperNewtworkLayerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adam.GOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -628,22 +628,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MM5396X53H;
-				INFOPLIST_FILE = ViperNewtworkLayerExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Got/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Adam.ViperNewtworkLayerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Adam.GOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6631FC5A22E93499008F0297 /* Build configuration list for PBXProject "ViperNewtworkLayerExample" */ = {
+		6631FC5A22E93499008F0297 /* Build configuration list for PBXProject "Got" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6631FC6F22E9349B008F0297 /* Debug */,
@@ -652,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6631FC7122E9349B008F0297 /* Build configuration list for PBXNativeTarget "ViperNewtworkLayerExample" */ = {
+		6631FC7122E9349B008F0297 /* Build configuration list for PBXNativeTarget "Got" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6631FC7222E9349B008F0297 /* Debug */,

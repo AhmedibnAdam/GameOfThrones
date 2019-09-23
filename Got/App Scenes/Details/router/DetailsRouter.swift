@@ -32,8 +32,6 @@ class DetailsRouter: DetailsRouterProtocol {
             style: .default
             )
         )
-        
-        
         viewController?.present(alert, animated: true, completion: nil)
     }
     

@@ -48,10 +48,7 @@ class DetailsPresenter: DetailsPresenterProtocol, UsersInteractorOutputProtocol 
     
     func usersFetchedSuccessfully(users: Got) {
         view?.hideLoadingIndicator()
-      
-        
         view?.reloadData()
-        
     }
     
     func usersFetchingFailed() {

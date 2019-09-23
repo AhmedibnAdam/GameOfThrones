@@ -63,7 +63,8 @@ class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
         cell.configure(viewModel: viewModel)
     }
     func didselectRow() {
-        router.presentDetails()
+        router.presentAlert()
+      //  router.presentDetails()
     }
     func showAlert() {
         router.presentAlert()

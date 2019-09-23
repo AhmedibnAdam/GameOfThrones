@@ -50,6 +50,7 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         presenter.didselectRow()
     }
   

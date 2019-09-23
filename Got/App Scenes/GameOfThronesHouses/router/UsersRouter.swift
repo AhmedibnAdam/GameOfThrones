@@ -15,14 +15,9 @@ protocol UsersRouterProtocol {
 
 
 class UsersRouter: UsersRouterProtocol {
-    
-    
-    
     weak var viewController: UIViewController?
-    
     func presentAlert() {
     //    self.sortCompletion = sortCompletion
-        
         let alert = UIAlertController(
             title: "Default Alert",
             message: nil,
@@ -30,9 +25,13 @@ class UsersRouter: UsersRouterProtocol {
         )
         
         alert.addAction(UIAlertAction(
-            title: " Dismiss Button in Default Alert ",
+            title: "  Button show details ",
             style: .default
              )
+        {
+            UIAlertAction in
+                self.presentDetails()
+            }
         )
        
         
