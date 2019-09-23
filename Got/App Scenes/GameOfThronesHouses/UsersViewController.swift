@@ -7,18 +7,24 @@
 //
 
 import UIKit
-
+import Connectivity
 
 protocol UsersViewProtocol: class {
     var presenter: UsersPresenterProtocol! { get set }
     func showLoadingIndicator()
     func hideLoadingIndicator()
     func reloadData()
+    func reachablityNetwork()
 }
 
 
 
 class UsersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UsersViewProtocol {
+  
+    
+    fileprivate let connectivity: Connectivity = Connectivity()
+ //   fileprivate var isCheckingConnectivity: Bool = false
+    
     
     var presenter: UsersPresenterProtocol!
     
@@ -28,6 +34,13 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         presenter.viewDidLoad()
          setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        connectivity.framework = .network
+        configureConnectivityNotifier()
+       
+        startConnectivityChecks()
     }
     
     private func setupTableView() {
@@ -69,4 +82,72 @@ class UsersViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    func reachablityNetwork() {
+        presenter.reachabilityStatus()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        connectivity.stopNotifier()
+    }
+    
+    deinit {
+        connectivity.stopNotifier()
+    }
+
+
+}
+
+private extension UsersViewController {
+    func configureConnectivityNotifier() {
+        let connectivityChanged: (Connectivity) -> Void = { [weak self] connectivity in
+            self?.updateConnectionStatus(connectivity.status)
+        }
+        connectivity.whenConnected = connectivityChanged
+        connectivity.whenDisconnected = connectivityChanged
+    }
+    
+    func performSingleConnectivityCheck() {
+        connectivity.checkConnectivity { connectivity in
+            self.updateConnectionStatus(connectivity.status)
+        }
+    }
+    
+    func startConnectivityChecks() {
+        //    activityIndicator.startAnimating()
+        connectivity.startNotifier()
+        //    isCheckingConnectivity = true
+        //  segmentedControl.isEnabled = false
+        //  updateNotifierButton(isCheckingConnectivity: isCheckingConnectivity)
+    }
+    
+    func stopConnectivityChecks() {
+        //   activityIndicator.stopAnimating()
+        connectivity.stopNotifier()
+        //   isCheckingConnectivity = false
+        //   segmentedControl.isEnabled = true
+        //  updateNotifierButton(isCheckingConnectivity: isCheckingConnectivity)
+    }
+    
+    func updateConnectionStatus(_ status: Connectivity.Status) {
+        switch status {
+        case  .connected:
+            print("connected")
+        case .notConnected:
+            print("not connected")
+            reachablityNetwork()
+        case .connectedViaCellularWithoutInternet:
+            print("no internet")
+            reachablityNetwork()
+        case .connectedViaWiFiWithoutInternet:
+            print("no internot")
+            reachablityNetwork()
+        case .connectedViaCellular:
+            print("connected")
+        case .connectedViaWiFi:
+            print("connected")
+        }
+        
+    }
+
 }

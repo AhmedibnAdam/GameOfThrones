@@ -15,12 +15,11 @@ protocol UsersPresenterProtocol: class {
     func viewDidLoad()
     func configure(cell: UsersCellView, indexPath: IndexPath)
     func didselectRow()
+    func reachabilityStatus()
 }
 
 class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
-  
-    
-    
+
     weak var view: UsersViewProtocol?
     private let interactor: UsersInteractorInputProtocol
     private let router: UsersRouterProtocol
@@ -63,10 +62,15 @@ class UsersPresenter: UsersPresenterProtocol, UsersInteractorOutputProtocol {
         cell.configure(viewModel: viewModel)
     }
     func didselectRow() {
-        router.presentAlert()
+        router.presentAlert(msg: "message", title: "Alert")
       //  router.presentDetails()
     }
     func showAlert() {
-        router.presentAlert()
+        router.presentAlert(msg: "Alert1", title: "Alert1")
     }
+    
+    func reachabilityStatus() {
+        router.presentAlertWithoutTitle(msg: "No Internet Connection ! ")
+    }
+    
 }

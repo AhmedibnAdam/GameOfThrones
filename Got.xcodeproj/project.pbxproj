@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19F0E8E4322CEDC73EAD32CC /* Pods_ViperNewtworkLayerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382262D3EC1A189114F66014 /* Pods_ViperNewtworkLayerExample.framework */; };
 		6631FC6322E93499008F0297 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631FC6222E93499008F0297 /* AppDelegate.swift */; };
 		6631FC6A22E9349B008F0297 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6631FC6922E9349B008F0297 /* Assets.xcassets */; };
 		6631FC6D22E9349B008F0297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6631FC6B22E9349B008F0297 /* LaunchScreen.storyboard */; };
@@ -35,9 +34,11 @@
 		66C9C4D522F40BF5005A47D8 /* DetailsInteactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D422F40BF5005A47D8 /* DetailsInteactor.swift */; };
 		66C9C4D722F40C6D005A47D8 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D622F40C6D005A47D8 /* DetailsPresenter.swift */; };
 		66C9C4D922F40CFE005A47D8 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C9C4D822F40CFE005A47D8 /* DetailsRouter.swift */; };
+		D3744DC2C28F6D472707B8E5 /* Pods_Got.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4B0664F313581E43CF6E21 /* Pods_Got.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4B0664F313581E43CF6E21 /* Pods_Got.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Got.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		382262D3EC1A189114F66014 /* Pods_ViperNewtworkLayerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperNewtworkLayerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6631FC5F22E93499008F0297 /* Got.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Got.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6631FC6222E93499008F0297 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +69,9 @@
 		66C9C4D422F40BF5005A47D8 /* DetailsInteactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteactor.swift; sourceTree = "<group>"; };
 		66C9C4D622F40C6D005A47D8 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
 		66C9C4D822F40CFE005A47D8 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
+		6C351EDFB303748CF2055972 /* Pods-Got.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Got.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Got/Pods-Got.debug.xcconfig"; sourceTree = "<group>"; };
 		7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.release.xcconfig"; sourceTree = "<group>"; };
+		AE9359BDDF90561E96B3C3B5 /* Pods-Got.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Got.release.xcconfig"; path = "Pods/Target Support Files/Pods-Got/Pods-Got.release.xcconfig"; sourceTree = "<group>"; };
 		F7E2601B6514938EF5BEC37D /* Pods-ViperNewtworkLayerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperNewtworkLayerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F0E8E4322CEDC73EAD32CC /* Pods_ViperNewtworkLayerExample.framework in Frameworks */,
+				D3744DC2C28F6D472707B8E5 /* Pods_Got.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,8 @@
 			children = (
 				F7E2601B6514938EF5BEC37D /* Pods-ViperNewtworkLayerExample.debug.xcconfig */,
 				7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */,
+				6C351EDFB303748CF2055972 /* Pods-Got.debug.xcconfig */,
+				AE9359BDDF90561E96B3C3B5 /* Pods-Got.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				382262D3EC1A189114F66014 /* Pods_ViperNewtworkLayerExample.framework */,
+				1F4B0664F313581E43CF6E21 /* Pods_Got.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -400,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ViperNewtworkLayerExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Got-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -415,8 +421,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Got/Pods-Got-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Connectivity/Connectivity.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -424,11 +431,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Connectivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperNewtworkLayerExample/Pods-ViperNewtworkLayerExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Got/Pods-Got-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -604,7 +612,7 @@
 		};
 		6631FC7222E9349B008F0297 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E2601B6514938EF5BEC37D /* Pods-ViperNewtworkLayerExample.debug.xcconfig */;
+			baseConfigurationReference = 6C351EDFB303748CF2055972 /* Pods-Got.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,7 +631,7 @@
 		};
 		6631FC7322E9349B008F0297 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7711DF83808EB2FD30161743 /* Pods-ViperNewtworkLayerExample.release.xcconfig */;
+			baseConfigurationReference = AE9359BDDF90561E96B3C3B5 /* Pods-Got.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

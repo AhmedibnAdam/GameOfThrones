@@ -9,18 +9,34 @@
 import UIKit
 
 protocol UsersRouterProtocol {
-    func presentAlert()
+    func presentAlert(msg : String , title : String)
+    func presentAlertWithoutTitle(msg : String )
     func presentDetails()
 }
 
 
 class UsersRouter: UsersRouterProtocol {
+    
+    func presentAlertWithoutTitle(msg: String) {
+        let alert = UIAlertController(
+            title: "",
+            message: msg,
+            preferredStyle: .alert
+        )
+        viewController?.present(alert, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { // Change
+            alert.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+  
     weak var viewController: UIViewController?
-    func presentAlert() {
+    func presentAlert(msg : String , title : String) {
     //    self.sortCompletion = sortCompletion
         let alert = UIAlertController(
-            title: "Default Alert",
-            message: nil,
+            title: title,
+            message: msg,
             preferredStyle: .actionSheet
         )
         
@@ -37,6 +53,8 @@ class UsersRouter: UsersRouterProtocol {
         
         viewController?.present(alert, animated: true, completion: nil)
     }
+    
+    
     
     func presentDetails() {
         let detailsModuleViewController = DetailsViewController.init(nibName: "Details", bundle: nil)
